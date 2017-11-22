@@ -22,17 +22,30 @@
 
 
 <div class="topnav" id="myTopnav">
+
   <a href="#home" class="active">Home</a>
   <a href="#fashion">Fashion</a>
   <a href="#lifestyle">Lifestyle</a>
   <a href="#about me">About Me</a>
+
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
-
-<div style="padding-left:16px">
-
 
 </div>
+
+
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
 
 
 <div class="slideshow-container">
@@ -40,31 +53,31 @@
 <div class="mySlides fade">
   <div class="numbertext">1 / 5</div>
   <img src="4.jpg" style="width:100%">
-  <div class="text">Caption Text</div>
+
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 5</div>
   <img src="5.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
+
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 5</div>
   <img src="2.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
+
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">4 / 5</div>
   <img src="3.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
+
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">5 / 5</div>
   <img src="1.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
+
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -109,6 +122,21 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 6000); // Change image every 6 seconds
+}
 </script>
 
 
@@ -118,37 +146,44 @@ function showSlides(n) {
 
   <div class="column">
   <div class="w3-quarter">
-      <img src="1.jpg" alt="Sandwich" style="width:100%">
-    <h2>Column</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+      <img src="chloe.jpg" alt="Sandwich" style="width:100%" class="c-opacity">
+    <h2>Chloe Collection 2017</h2>
+    <p>After last season’s virtual motorcycle trip, Chloé’s Clare Waight Keller was in the mood for a more urban vibe.</p>
   </div>
   </div>
   <div class="column">
   <div class="w3-quarter">
-      <img src="2.jpg" alt="Sandwich" style="width:100%">
-    <h2>Column</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+      <img src="pop.jpg" alt="Sandwich" style="width:100%" class="c-opacity">
+    <h2>Poppy Dyes; Autumn Dress Loving</h2>
+    <p>With a first class degree in Fine Art from a top London university Poppy has always had an eye for detail. She has taken her traditional background on to a modern platform and now channels her creativity by curating her website.</p>
   </div>
   </div>
     <div class="column">
 	<div class="w3-quarter">
-      <img src="3.jpg" alt="Sandwich" style="width:100%">
-    <h2>Column</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+      <img src="vs.jpg" alt="Sandwich" style="width:100%" class="c-opacity">
+    <h2>Victoria Secret China 2017</h2>
+    <p>Sisters Gigi and Bella Hadid may have had all of the attention leading up to the 2017 Victoria's Secret Fashion Show on Monday, but model Ming Xi quickly snatched all of it after taking a tumble on the runway.</p>
   </div>
   </div>
     <div class="column">
 	<div class="w3-quarter">
-      <img src="4.jpg" alt="Sandwich" style="width:100%">
-    <h2>Column</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+      <img src="GZ.jpg" alt="Sandwich" style="width:100%" class="c-opacity">
+    <h2>Vogue</h2>
+    <p>'It's not about gender': Gigi Hadid poses with boyfriend Zayn Malik for Vogue as they talk stealing clothes from each other's closets.They have been the 'it' couple for the past year. And on Thursday Gigi Hadid and Zayn Malik sealed their reputation as the King and Queen of the Millennials by appearing together on the August cover of Vogue. The LA-raised blonde supermodel looked elegant in clashing patterns as her tattoo'd One Direction wonder cradled her shoulder and went in for a peck on her cheek as they took the front of the world's top fashion publication.</p>
   </div>
   </div>
     <div class="column">
 	<div class="w3-quarter">
-      <img src="5.jpg" alt="Sandwich" style="width:100%">
-    <h2>Column</h2>
+      <img src="balmain.jpg" alt="Sandwich" style="width:100%" class="c-opacity">
+    <h2>Kardashian sisters walk Balmain</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  </div>
+  <div class="column">
+	<div class="w3-quarter">
+      <img src="cheryl.jpg" alt="Sandwich" style="width:100%" class="c-opacity">
+    <h2>Cheryl makes first appearance during L'Oreal fashion show in Paris </h2>
+    <p>Cheryl walks the runway in FIRST comeback appearance since welcoming son Bear as she flaunts post-baby body during L'Oreal fashion show in Paris. Cheryl has made her first major appearance since welcoming baby son Bear with Liam Payne.</p>
   </div>
   </div>
 </div>
