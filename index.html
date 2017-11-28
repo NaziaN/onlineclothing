@@ -1,215 +1,172 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<title>Fashion Blog</title>
- <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Fashion Blog</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  
   <script src="https://use.fontawesome.com/c1d8f0ff57.js"></script>
-
-
-  
+  <link href="https://fonts.googleapis.com/css?family=League+Script" rel="stylesheet">
 </head>
-
-
 <body>
-
-
-
-<div class="topnav" id="myTopnav">
-
-  <a href="index.html" class="active">Home</a>
-  <a href="fashion.html">Fashion</a>
-  <a href="#lifestyle">Lifestyle</a>
-  <a href="#about me">About Me</a>
-
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-
-</div>
-
-
-
-
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-</script>
-
-
-
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 5</div>
-  <img src="4.jpg" style="width:100%">
-
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 5</div>
-  <img src="5.jpg" style="width:100%">
-
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 5</div>
-  <img src="2.jpg" style="width:100%">
-
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">4 / 5</div>
-  <img src="3.jpg" style="width:100%">
-
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">5 / 5</div>
-  <img src="1.jpg" style="width:100%">
-
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-  <span class="dot" onclick="currentSlide(4)"></span> 
-  <span class="dot" onclick="currentSlide(5)"></span> 
-</div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; 
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1} 
-    slides[slideIndex-1].style.display = "block"; 
-    setTimeout(showSlides, 6000); // Change image every 6 seconds
-}
-</script>
-
-
-
-<div class="row">
-  <div class="column">
-    <h2>Chloe  </h2>
-	<img src="chloe.jpg" alt="Smiley face" style= "width: 100%">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  <!-- LOGO -->
+  <center>
+    <h1> Nazia Nawab </h1>
+  </center>
+  <!-- LOGO ENDS -->
+  <!-- NAVIGATION STARTS -->
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="fashion.html">Fashion</a>
+    <a href="lifestyle.html">Lifestyle</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
-  <div class="column">
-    <h2>Balmian</h2>
-	<img src="balmain.jpg" alt="Smiley face" style= "width: 100%">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  <script src="javascript/navigation.js"></script>
+  <br>
+  <!-- NAVIGATION ENDS -->
+  <!-- SLIDESHOW BEGINS -->
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+	  <img src="images/4.jpg" style="width:100%">
+      <div class="numbertext">1 / 5</div>
+    </div>
+    <div class="mySlides fade">
+	  <img src="images/5.jpg" style="width:100%">
+      <div class="numbertext">2 / 5</div>
+    </div>
+    <div class="mySlides fade">
+	  <img src="images/2.jpg" style="width:100%">
+      <div class="numbertext">3 / 5</div>
+	</div>
+	<div class="mySlides fade">
+	  <img src="images/2.jpg" style="width:100%">
+      <div class="numbertext">4 / 5</div>
+	</div>
+	<div class="mySlides fade">
+      <img src="images/1.jpg" style="width:100%">
+      <div class="numbertext">5 / 5</div>
+	</div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
-  <div class="column">
-    <h2>Vogue</h2>
-	<img src="GZ.jpg" alt="Smiley face" style= "width: 100%">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
   </div>
-</div>
-
-<div class="row">
-  <div class="column">
-    <h2>Cheryl</h2>
-	<img src="cheryl.jpg" alt="Smiley face" style= "width: 100%">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  <script src="javascript/slideshow.js"></script>
+  <!-- SLIDESHOW ENDS -->
+  <!-- GALLERY BEGINS -->
+<main>
+  <div class="row">
+    <div class="column">
+      <div class="gallery">
+        <a target="_blank" href="chloe.jpg">
+          <img class="gal" src="images/chloe.jpg" alt="Trolltunga Norway" width="300" height="200">
+		</a>
+        <div class="desc">Chloe 2017</div>
+	  </div>
+	</div>
+	<div class="column">
+      <div class="gallery">
+        <a target="_blank" href="chloe.jpg">
+          <img class="gal" src="images/food.jpg" alt="Trolltunga Norway" width="300" height="200">
+        </a>
+        <div class="desc">10 ways to get into shape</div>
+      </div>
+	</div>
+    <div class="column">
+      <div class="gallery">
+        <a target="_blank" href="chloe.jpg">
+          <img class="gal" src="images/ken1.jpg" alt="Trolltunga Norway" width="300" height="200">
+        </a>
+        <div class="desc">Kendall takes over CK</div>
+      </div>
+    </div>
   </div>
-  <div class="column">
-    <h2>Victoria Secret</h2>
-	<img src="vs.jpg" alt="Smiley face" style= "width: 100%">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  <div class="row">
+    <div class="column">
+      <div class="gallery">
+        <a target="_blank" href="chloe.jpg">
+          <img class="gal" src="images/cheryl.jpg" alt="Trolltunga Norway" width="300" height="200">
+         </a>
+         <div class="desc">Cheryl returns to Fashion</div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="gallery">
+        <a target="_blank" href="chloe.jpg">
+          <img class="gal" src="images/khloe.jpg" alt="Trolltunga Norway" width="300" height="200">
+        </a>
+        <div class="desc">Khloe's new summer body</div>
+      </div>
+	</div>
+    <div class="column">
+      <div class="gallery">
+         <a target="_blank" href="chloe.jpg">
+           <img class="gal" src="images/travel.jpg" alt="Trolltunga Norway" width="300" height="200">
+         </a>
+        <div class="desc">Kardashian's walk Balmain</div>
+      </div>
+    </div>
   </div>
-  <div class="column">
-    <h2>Poppy Dyes</h2>
-	<img src="pop.jpg" alt="Smiley face" style= "width: 100%">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  <div class="row">
+    <div class="column">
+      <div class="gallery">
+        <a target="_blank" href="chloe.jpg">
+          <img class="gal" src="images/demi.jpg" alt="Trolltunga Norway" width="300" height="200">
+        </a>
+        <div class="desc">Wedding dress of the year</div>
+      </div>
+    </div>
+	<div class="column">
+      <div class="gallery">
+        <a target="_blank" href="chloe.jpg">
+          <img class="gal" src="images/balmain.jpg" alt="Trolltunga Norway" width="300" height="200">
+        </a>
+        <div class="desc">Kardashian's walk balmain</div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="gallery">
+        <a target="_blank" href="chloe.jpg">
+          <img class="gal" src="images/selena.jpg" alt="Trolltunga Norway" width="300" height="200">
+        </a>
+        <div class="desc">Selena's new short do</div>
+      </div>
+    </div>
   </div>
-</div>
-
-<form action="/action_page.php">
-  <div class="container">
-    <h2>Subscribe to our Newsletter</h2>
-    <p>Enter your name and e-mail below and get notified on the latest blog posts.</p>
-  </div>
-
-  <div class="container" style="background-color:white">
-    <input type="text" placeholder="Name" name="name" required>
-    <input type="text" placeholder="Email address" name="mail" required>
-    <input type="checkbox" checked="checked"> Daily Newsletter
-  </div>
-
- 
- 
-  
-  <div class="container">
-    <input type="submit" value="Subscribe">
-  </div>
-</form>
-
-
-
+</main>
+  <!-- GALLERY ENDS -->
+  <!-- SUBSCRIBE BEGINS -->
+<center>
+  <form action="/action_page.php">
+    <div class="container">
+      <h3>Subscribe to our Newsletter</h3>
+      <p>Enter your name and e-mail below and get notified on the latest blog posts.</p>
+      <input type="text" placeholder="Name" name="name" required>
+      <input type="text" placeholder="Email address" name="mail" required>
+      <input type="submit" value="Subscribe">
+    </div>
+  </form>
+</center>
+  <!-- SUBSCRIBE ENDS -->
+  <!-- FOOTER BEGINS -->
 <div class="footer">
-<br>
-<i class="fa fa-facebook" aria-hidden="true"></i>
-<i class="fa fa-snapchat" aria-hidden="true"></i>
-<i class="fa fa-twitter" aria-hidden="true"></i> 
-<i class="fa fa-instagram" aria-hidden="true"></i>
-<i class="fa fa-pinterest" aria-hidden="true"></i>
-<i class="fa fa-youtube" aria-hidden="true"></i>
-
-
+  <br>
+  <i class="fa fa-facebook" aria-hidden="true"></i>
+  <i class="fa fa-snapchat" aria-hidden="true"></i>
+  <i class="fa fa-twitter" aria-hidden="true"></i> 
+  <i class="fa fa-instagram" aria-hidden="true"></i>
+  <i class="fa fa-pinterest" aria-hidden="true"></i>
+  <i class="fa fa-youtube" aria-hidden="true"></i>
   <p><i class="fa fa-copyright fa-6x" aria-hidden="true"></i> COPYRIGHT: UNIVERSITY PROJECT</p>
   <br>
 </div>
-
+  <!-- FOOTER ENDS -->
 </body>
 </html>
 
