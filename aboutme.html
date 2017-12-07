@@ -9,18 +9,18 @@
 </head>
 <body>
   <!-- LOGO -->
-  <center>
-    <h1> Nazia Nawab </h1>
-  </center>
+  <div class="logo"> 
+  <h1> Nazia Nawab </h1>
+  </div>
   <!-- LOGO ENDS -->
   <!-- NAVIGATION STARTS -->
-  <div class="topnav" id="myTopnav">
+  <nav class="topnav" id="myTopnav">
     <a href="index.html">Home</a>
     <a href="fashion.html">Fashion</a>
     <a href="lifestyle.html">Lifestyle</a>
-    <a href="about me.html" class="active">About Me</a>
+    <a href="aboutme.html" class="active">About Me</a>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-  </div>
+  </nav>
   <script src="javascript/navigation.js"></script>
   <br>
   <!-- NAVIGATION ENDS -->
@@ -31,12 +31,13 @@
 <!-- POLAROID STARTS -->  
 <main>
   <div class="row">
-      <div class="column">
-       </div>
-    <div class="column">
+     <section>
+	 	<h6>  &nbsp; </h6>
+		</section>
+     <section>
+	 	<h6>  &nbsp; </h6>
       <div class="polaroid">
-            <img class="gal"	src="images/profile.jpg" alt="Norway" style="width: 100%">
-		  </a>
+            <img class="gal" src="images/profile.jpg" alt="Norway" style="width: 100%">
           <div class="container">
             <div class="w3-container w3-white">
               <p>Hello there, I’m Nazia.
@@ -48,10 +49,37 @@
             </div>
           </div>
         </div>
-       </div>
+       </section>
 	</div>
-	    <div class="column">
-       </div>
+     <section>
+	 	<h6>  &nbsp; </h6>
+		</section>
+		
+
+
+			 	<h6>  &nbsp; </h6>
+  
+  <p>
+   <div id="map"></div>
+  <p>
+
+          <script>       function initMap() {
+        var uluru = {lat: 52.630155, lng: -1.139180};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+	
+	
+		  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc8QKYR9fBzOJhaRzJx7LjWdUrkZ_U3S0&callback=initMap"
+  type="text/javascript"></script>
+
   <br>
   
   
@@ -73,8 +101,8 @@
  
   
   
-    <!-- SUBSCRIBE BEGINS -->
-<center>
+ <!-- SUBSCRIBE BEGINS -->
+<div class="subscribe">
   <form action="/action_page.php">
     <div class="container">
       <h3>Subscribe to our Newsletter</h3>
@@ -84,10 +112,10 @@
       <input type="submit" value="Subscribe">
     </div>
   </form>
-</center>
+</div>
   <!-- SUBSCRIBE ENDS -->
   <!-- FOOTER BEGINS -->
-<div class="footer">
+<footer>
   <br>
   <i class="fa fa-facebook" aria-hidden="true"></i>
   <i class="fa fa-snapchat" aria-hidden="true"></i>
@@ -97,7 +125,7 @@
   <i class="fa fa-youtube" aria-hidden="true"></i>
   <p><i class="fa fa-copyright fa-6x" aria-hidden="true"></i> COPYRIGHT: UNIVERSITY PROJECT</p>
   <br>
-</div>
+</footer>
   <!-- FOOTER ENDS -->
 </body>
 </html>

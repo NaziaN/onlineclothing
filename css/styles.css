@@ -12,13 +12,7 @@ header {
   padding: 15px;
   
 }
-h1 {
-  font-size: 3.5em;
-  margin: 0;
-  padding: 1em;
-  font-family: 'League Script', cursive;
-  color: #CA747F;
-}
+
 h2 {
   font-family: 'Gloria Hallelujah', cursive;
     font-size: 2.5em;
@@ -26,6 +20,9 @@ h2 {
     color: #CA747F;
 }
 
+h6 {
+	font-size: 0em;
+}
 
 main {
   max-width: 1535px;
@@ -34,49 +31,66 @@ main {
   text-align: center;
   padding: 2px;
 }
-section {
-  font-size: 1em;
-  background: #EBE4E4;
-  margin: 1em 1% 1em 1%;
 
+#map {
+   width: 100%;
+   height: 400px;
+ }
+ 
+   /* THIRD BREAKPOINT (MOBILE SIZE) */
+@media screen and (min-width: 300px) {
+  body {
+    background: #EBE4E4;
+	font-family: arial;
 }
-section:hover {
-  background: #666;
+  section {
+    width: 80%;
+  }
 }
 
 
 
-/* FIRST BREAKPOINT (DESKTOP SIZE) */
+  /* END OF THIRD BREAKPOINT */
+
+  /* SECOND BREAKPOINT (TABLET SIZE) */
 @media screen and (min-width: 500px) {
   body {
-	  background: #EBE4E4;
-	  font-family: arial;
+	background: #EBE4E4;
+	font-family: arial;
   }
   
   section {
 	display: inline-block;
 	width: 45%;
-
+  }
 }
-
-}
-/* END FIRST BREAKPOINT */
+  /* END OF SECOND BREAKPOINT */
 
 
-/* SECOND BREAKPOINT (DESKTOP SIZE) */
+  /* FIRST BREAKPOINT (DESKTOP SIZE) */
 @media screen and (min-width: 1000px) {
   body {
-	  background: #EBE4E4;
-	  font-family: arial;
+	background: #EBE4E4;
+	font-family: arial;
   }
-    section {
+  section {
 	width: 22%;
+  }
+}
+  /* END FIRST BREAKPOINT */
+
+ h1 {
+  font-size: 3.5em;
+  margin: 0;
+  padding: 1em;
+  font-family: 'League Script', cursive;
+  color: #CA747F;
 }
 
+.logo {
+	text-align: center;
 }
-/* END SECOND BREAKPOINT */
-
-
+ 
 
 /*navigation*/
 
@@ -96,8 +110,11 @@ section:hover {
 .topnav {
     overflow: hidden;
     background-color: #CA747F; 
-	max-width: 100%; 
-
+	max-width: 1500px;
+	margin:0 auto;
+    list-style:none;
+    text-align: center;
+    
 }
 
 /* Style the topnav links */
@@ -118,10 +135,13 @@ section:hover {
 
 
 
+.subscribe{
+	text-align: center;
+}
 
 
 /* Create three equal columns that floats next to each other */
-.column {
+section {
     float: left;
     width: 33.33%;
     padding: 15px;
@@ -183,9 +203,12 @@ body {font-family: Verdana,sans-serif;margin:0}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1200px;
-  position: relative;
-  margin: auto;
+    max-width: 1500px;
+	margin:0 auto;
+    list-style:none;
+    text-align: center;
+    position: relative;
+    margin: auto;
 }
 
 /* Next & previous buttons */
@@ -355,7 +378,7 @@ body {
 /* Style the header */
 
 /* Create three equal columns that floats next to each other */
-.column {
+section {
     float: left;
     width: 33.33%;
     padding: 15px;
@@ -370,7 +393,7 @@ body {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width:600px) {
-    .column {
+   section {
         width: 100%;
     }
 }
@@ -446,7 +469,7 @@ div.container {
 
 /*FOOTER*/
 
-.footer {
+footer {
 
     left: 0;
     bottom: 0;
