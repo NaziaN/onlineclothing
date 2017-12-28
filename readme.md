@@ -10,12 +10,14 @@ https://nazian.github.io/onlineclothing/index.html
 ! [Screenshot] (/..images/navigationstructure.jpg)
 
 #Screen Designs 
-! [Screenshot] (/..images/HomePage.jpg)
-! [Screenshot] (/..images/otherpages.jpg)
-! [Screenshot] (/..images/aboutme.jpg)
+https://github.com/NaziaN/onlineclothing/blob/master/images/navstructure.jpg
+https://github.com/NaziaN/onlineclothing/blob/master/images/indexpage.jpg
+https://github.com/NaziaN/onlineclothing/blob/master/images/otherpages.jpg
+https://github.com/NaziaN/onlineclothing/blob/master/images/aboutmepage.jpg
 ! [Screenshot] (/..images/article.jpg)
-! [Screenshot] (/..images/testplan.jpg)
-! [Screenshot] (/..images/references.jpg)
+https://github.com/NaziaN/onlineclothing/blob/master/images/testplan1.jpg
+https://github.com/NaziaN/onlineclothing/blob/master/images/testplan2.jpg
+https://github.com/NaziaN/onlineclothing/blob/master/images/references.jpg
 
 #Index Page 
 #Font 
