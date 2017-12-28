@@ -9,8 +9,8 @@ https://nazian.github.io/onlineclothing/index.html
 #Navigation Structure 
 ! [Screenshot] (/..images/navigationstructure.jpg)
 
-#Screen Designs
-! [Screenshot] (https://github.com/NaziaN/onlineclothing/blob/master/images/navstructure.jpg) 
+# Screen Designs
+![Screenshot](https://github.com/NaziaN/onlineclothing/blob/master/images/navstructure.jpg) 
 
 https://github.com/NaziaN/onlineclothing/blob/master/images/indexpage.jpg
 https://github.com/NaziaN/onlineclothing/blob/master/images/otherpages.jpg
