@@ -4,7 +4,7 @@
 https://nazian.github.io/onlineclothing/index.html
 
 # W3 Validator
-![Screenshot] (https://github.com/NaziaN/onlineclothing/blob/master/images/w3.jpg)
+![Screenshot](https://github.com/NaziaN/onlineclothing/blob/master/images/w3.jpg)
 
 # Navigation Structure 
 ![Screenshot](https://github.com/NaziaN/onlineclothing/blob/master/images/navstructure.jpg)
