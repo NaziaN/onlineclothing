@@ -1,4 +1,4 @@
-# Online clothing 
+# Fashion Blog 
 
 # Website Link
 https://nazian.github.io/onlineclothing/index.html
